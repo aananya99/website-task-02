@@ -1,0 +1,122 @@
+/***** Shared styles  *****/
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.bg-color {
+  background-color: rgb(245, 248, 255);
+}
+img {
+  width: 100%;
+}
+/* font_noto-serif*/
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-style: normal;
+}
+/* font_inter*/
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.section-content {
+  color: rgba(0, 0, 0, 0.5);
+  /* width: 70%; */
+}
+.text-color {
+  color: rgb(233, 90, 8);
+}
+.common-btn {
+  background-color: rgb(233, 90, 8);
+  color: white;
+  font-weight: 600;
+  padding: 20px;
+  border: none;
+  width: 270px;
+  height: 50px;
+}
+/***** nav section *****/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.nav-items {
+  display: flex;
+}
+.nav-items li {
+  list-style: none;
+}
+.nav-items a {
+  text-decoration: none;
+  margin-right: 48px;
+  font-weight: 400;
+  color: rgb(137, 135, 161);
+}
+#nav-home {
+  font-weight: 700;
+  color: rgb(37, 36, 50);
+}
+#nav-cart {
+  color: black;
+}
+/***** banner section*****/
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.banner p {
+  width: 70%;
+}
+.banner-left {
+  flex: 1;
+}
+.banner-right {
+  flex: 1;
+}
+/*****our plants section  *****/
+
+.top-part {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+}
+.top-part p {
+  margin-bottom: 30px;
+}
+.bottom-part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.flower-card img {
+  margin-top: 20px;
+  width: 270px;
+  height: 320px;
+}
+.plant-content {
+  text-align: center;
+  margin-top: 30px;
+}
+.plant-content h4 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.plant-content h3 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
