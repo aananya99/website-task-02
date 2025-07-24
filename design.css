@@ -2,9 +2,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .bg-color {
@@ -30,6 +31,7 @@ img {
 }
 .section-content {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
   /* width: 70%; */
 }
 .text-color {
@@ -39,10 +41,11 @@ img {
   background-color: rgb(233, 90, 8);
   color: white;
   font-weight: 600;
-  padding: 20px;
+  padding: 10px 20px;
   border: none;
   width: 270px;
-  height: 50px;
+  height: 40px;
+  border-radius: 5px;
 }
 /***** nav section *****/
 .nav-bar {
@@ -70,16 +73,13 @@ img {
 #nav-cart {
   color: black;
 }
+
 /***** banner section*****/
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 120px;
   margin-bottom: 120px;
-}
-.banner p {
-  width: 70%;
 }
 .banner-left {
   flex: 1;
@@ -87,36 +87,98 @@ img {
 .banner-right {
   flex: 1;
 }
+.banner-right img {
+  display: block;
+}
 /*****our plants section  *****/
-
-.top-part {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
+.our-plants h3 {
+  font-size: 3rem;
   text-align: center;
 }
-.top-part p {
-  margin-bottom: 30px;
+.our-plants p {
+  text-align: center;
+  margin: 16px 0;
+  padding: 0 120px;
 }
-.bottom-part {
+.card-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin-bottom: 200px;
 }
-.flower-card img {
-  margin-top: 20px;
-  width: 270px;
-  height: 320px;
+.card {
+  width: 100%;
+  margin-bottom: 30px;
 }
-.plant-content {
-  text-align: center;
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card-details h5 {
+  font-weight: 500;
   margin-top: 30px;
 }
-.plant-content h4 {
-  font-weight: 500;
+.card-details h4 {
+  font-weight: 700;
+}
+/***** flower and plant lovers  *****/
+.flower-store {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.flower-store-content {
+  width: 100%;
+}
+.flower-store-content h3 {
+  font-weight: 700;
+  font-size: 50px;
   margin-bottom: 20px;
 }
-.plant-content h3 {
+.flower-store-content li {
+  margin-bottom: 20px;
+}
+/*****Latest deals *****/
+.latest-deals h3 {
+  font-size: 50px;
   font-weight: 700;
-  margin-bottom: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 0 10px;
+  }
+
+  /*nav-bar */
+  .nav-bar {
+    margin: 30px 15px;
+    gap: 200px;
+    align-items: center;
+  }
+  .nav-bar img {
+    height: 38px;
+  }
+
+  .nav-items li:nth-child(1),
+  .nav-items li:nth-child(2),
+  .nav-items li:nth-child(3) {
+    display: none;
+  }
+  /* banner */
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner .section-title {
+    font-size: 1.5rem;
+    /* margin-top: 28px;
+    margin-bottom: 15px; */
+  }
+  .banner .section-content {
+    font-size: 14px;
+  }
 }
