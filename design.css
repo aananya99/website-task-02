@@ -14,12 +14,10 @@
 img {
   width: 100%;
 }
-/* font_noto-serif*/
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-style: normal;
 }
-/* font_inter*/
 .inter-font {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -32,7 +30,6 @@ img {
 .section-content {
   color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
-  /* width: 70%; */
 }
 .text-color {
   color: rgb(233, 90, 8);
@@ -46,7 +43,9 @@ img {
   width: 270px;
   height: 40px;
 }
+
 /***** nav section *****/
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -72,6 +71,7 @@ img {
 #nav-cart {
   color: black;
 }
+
 /***** banner section*****/
 
 .banner {
@@ -87,6 +87,7 @@ img {
 .banner-right {
   flex: 1;
 }
+
 /*****our plants section  *****/
 
 .our-plant {
@@ -162,51 +163,71 @@ img {
   z-index: 1;
   filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 }
+
 /*****Latest deals *****/
+
 .latest-deals {
-  margin-top: 130px;
+  margin-bottom: 120px;
 }
-.latest-deals h3 {
-  font-size: 3rem;
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin-bottom: 130px;
 }
-.latest-deals p {
-  text-align: center;
-  margin: 16px 0;
-  padding: 0 250px;
+.top-content h3 {
+  font-size: 50px;
 }
-.image-container {
-  width: 1140px;
-  margin: 120px 250px 120px 50px;
-}
-.img-container-left {
+.left-side {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .bloom-plant {
   background-image: url("./assets/deal-bloom.png");
-  filter: brightness(60%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  text-align: center;
-  padding: 50px;
-  width: 366.22px;
-  height: 206px;
 }
 .ana-plant {
   background-image: url("./assets/deal-ana.png");
-  filter: brightness(60%);
-  background-repeat: no-repeat;
+}
+.bloom-plant,
+.ana-plant {
+  background-blend-mode: darken;
   background-size: cover;
-  border-radius: 5px;
-  text-align: center;
-  padding: 50px;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 366.22px;
   height: 206px;
+  border-radius: 5px;
 }
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  gap: 20px;
+  padding: 50px;
+}
+.bottom-content {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.zabo-plant {
+  background-image: url("./assets/deal-zabo.png");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 753px;
+  height: 423.13px;
+  border-radius: 5px;
+  padding: 100px;
+}
+
 /***** join section *****/
+
 .join {
   display: flex;
   justify-content: center;
@@ -239,7 +260,7 @@ img {
   width: 186px;
   height: 50px;
 }
-/**** footer ****/
+/**** footer section ****/
 
 .footer-content {
   display: grid;
@@ -290,11 +311,13 @@ img {
   height: 20px;
   margin-top: 5px;
 }
+
 /***** Responsive *****/
 /* mobile device */
 
 @media screen and (max-width: 576px) {
-  /*nav-bar */
+  /*nav-section */
+
   .nav-bar {
     margin: 30px 15px;
     gap: 200px;
@@ -309,7 +332,8 @@ img {
   .nav-items li:nth-child(3) {
     display: none;
   }
-  /* banner */
+
+  /* banner section*/
 
   .banner {
     flex-direction: column-reverse;
@@ -322,7 +346,7 @@ img {
   .banner .section-content {
     font-size: 14px;
   }
-  /* our plants */
+  /* our plants section */
 
   .card-content {
     grid-template-columns: repeat(2, 1fr);
@@ -344,10 +368,10 @@ img {
   }
 
   /* flower and plant lovers  */
+
   .flower-store-content {
     width: 361px;
     height: 234px;
-    /* this need to be fix */
     margin-bottom: 120px;
   }
   .flower-store {
@@ -366,6 +390,34 @@ img {
     font-size: 14px;
     margin: 0 15px;
   }
+  /* latest deals */
+  .latest-deals {
+    margin-bottom: 45px;
+  }
+  .top-content {
+    margin-bottom: 50px;
+  }
+  .top-content h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .top-content p {
+    text-align: center;
+    font-size: 14px;
+    padding: 16px 25px;
+  }
+  .left-side {
+    flex-direction: column;
+  }
+  .bottom-content {
+    flex-direction: column;
+  }
+  .zabo-plant {
+    width: 361px;
+    height: 177px;
+    padding: 0;
+  }
+
   /* join section */
   .join {
     height: 275px;
@@ -386,6 +438,7 @@ img {
     width: 103px;
   }
   /* footer section */
+
   .footer {
     width: 359px;
     height: 765px;
